@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    min-height: 100%;
+}
+
+.navigation-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #585253;
+}
+
+.navigation-menu > .prepco-brand {
+    float: left;
+}
+
+.navigation-menu .prepco-brand h2 {
+    font-size: 22px;
+    padding: 22px 10px;
+    color: #C2CDA1;
+    margin: 0;
+}
+
+.prepco-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    float: right;
+    background-color: red;
+}
+
+.prepco-container {
+    max-width: 100%;
+}
