@@ -4,15 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { SiteHeaderComponent } from './shared/site-header/site-header.component';
+import { SideNavigationComponent } from './shared/side-navigation/side-navigation.component';
+
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SiteHeaderComponent,
+    SideNavigationComponent,
+    LandingPageComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
