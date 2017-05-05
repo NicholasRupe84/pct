@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'side-navigation',
   templateUrl: './side-navigation.component.html'
 })
-export class SideNavigationComponent {}
+export class SideNavigationComponent {
+    public isCollapsed:boolean = true;
+}
