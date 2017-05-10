@@ -4,7 +4,7 @@
             <a routerLink="/home" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-            <a routerLink="/distribution-piping" class="nav-link" (click)="isCollapsed = !isCollapsed">Distribution Piping</a>
+            <a class="nav-link" (click)="isCollapsed = !isCollapsed">Distribution Piping</a>
         </li>
         <div [collapse]="isCollapsed">
             <li class="nav-item">
@@ -15,6 +15,20 @@
             </li>
             <li class="nav-item">
                 <a routerLink="/wood-burner" class="nav-link">Wood Burner</a>
+            </li>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link" (click)="isCollapsed = !isCollapsed">Dust Control</a>
+        </li>
+        <div [collapse]="isCollapsed">
+            <li class="nav-item">
+                <a routerLink="/indonesia" class="nav-link">Indonesia</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/mexico" class="nav-link">Mexico</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/bahrain" class="nav-link">Bahrain</a>
             </li>
         </div>
         <li class="nav-item">
