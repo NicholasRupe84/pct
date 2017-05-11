@@ -9,6 +9,7 @@ import { WoodBurnerComponent } from './industrial-offerings/distribution-piping/
 import { BahrainComponent } from './industrial-offerings/dust-control/bahrain/bahrain.component';
 import { IndonesiaComponent } from './industrial-offerings/dust-control/indonesia/indonesia.component';
 import { MexicoComponent } from './industrial-offerings/dust-control/mexico/mexico.component';
+import { HomeAndGardenComponent } from './home-and-garden/home-and-garden.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
 const appRoutes: Routes = [
@@ -21,8 +22,8 @@ const appRoutes: Routes = [
     { path: 'bahrain', component: BahrainComponent },
     { path: 'indonesia', component: IndonesiaComponent },
     { path: 'mexico', component: MexicoComponent },
+    { path: 'home-and-garden', component: HomeAndGardenComponent },
     { path: 'contact', component: ContactPageComponent }
-    
 ];
 
 @NgModule({

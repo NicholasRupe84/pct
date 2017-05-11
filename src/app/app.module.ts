@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { CollapseModule } from 'ngx-bootstrap';
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,11 +19,13 @@ import { WoodBurnerComponent } from './industrial-offerings/distribution-piping/
 import { BahrainComponent } from './industrial-offerings/dust-control/bahrain/bahrain.component';
 import { IndonesiaComponent } from './industrial-offerings/dust-control/indonesia/indonesia.component';
 import { MexicoComponent } from './industrial-offerings/dust-control/mexico/mexico.component';
+import { HomeAndGardenComponent } from './home-and-garden/home-and-garden.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    PdfViewerComponent,
     SiteHeaderComponent,
     SideNavigationComponent,
     LandingPageComponent,
@@ -33,6 +36,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     BahrainComponent,
     IndonesiaComponent,
     MexicoComponent,
+    HomeAndGardenComponent,
     ContactPageComponent
   ],
   imports: [
