@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SiteHeaderComponent } from './shared/site-header/site-header.component';
 import { SideNavigationComponent } from './shared/side-navigation/side-navigation.component';
+import { PicModalComponent } from './shared/pieces/picmodal.component';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DetailsComponent } from './details/details.component';
@@ -28,6 +29,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     PdfViewerComponent,
     SiteHeaderComponent,
     SideNavigationComponent,
+    PicModalComponent,
     LandingPageComponent,
     DetailsComponent,
     FertilizerAndChemicalComponent,

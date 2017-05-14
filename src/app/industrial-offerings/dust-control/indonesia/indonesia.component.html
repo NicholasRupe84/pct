@@ -8,12 +8,30 @@
         <p>Water was taken from a large water storage basin that was also part of a project rainfall collection system during the monsoon periods.</p>
         <div class="row">
             <div class="col-6">
-                <img src="../assets/img/tph.jpg" class="mw-100">
-                <h4>Ship Unloading operating at 4000 TPH</h4>
+                <img src="../assets/img/tph.jpg" (click)="tphModal.show()" class="img-fluid img-thumbnail">
+                <div bsModal #tphModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="../assets/img/tph.jpg" class="mw-100 mh-100">
+                                <p>Ship Unloading operating at 4000 TPH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-6">
-                <img src="../assets/img/reclaim-machine.jpg" class="mw-100">
-                <h4>Stacker-Reclaim machine waiting completion of the stockyard preparations</h4>
+                <img src="../assets/img/reclaim-machine.jpg" (click)="reclaimModal.show()" class="img-fluid img-thumbnail">
+                <div bsModal #reclaimModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="../assets/img/reclaim-machine.jpg" class="mw-100 mh-100">
+                                <p>Stacker-Reclaim machine waiting completion of the stockyard preparations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

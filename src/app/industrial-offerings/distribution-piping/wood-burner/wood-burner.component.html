@@ -3,24 +3,36 @@
     <side-navigation></side-navigation>
     <div class="col-8">
       <h3>Pre-Insulated distribution piping Farming complex</h3>
-      <div class="row" style="padding-top: 1rem;">
-          <div class="col-6">
-            <img src="../../../../assets/img/woodburner.jpg" class="mw-100">
-          </div>
-          <div class="col-6">
-            <p>New straw and wood burning boiler producing 1,000,000 BTUs for hot water.</p>
-            <p>Buried pre-insulated piping installed for the distribution of the hot water to provide heating in the main farmhouse, out-buildings and a swimming pool.</p>
-          </div>
-      </div>
-      <div class="row" style="padding-top: 1rem;">
-          <div class="col-6">
-            <img src="../../../../assets/img/trenches.jpg" class="mw-100">
-          </div>
-          <div class="col-6">
-            <p>The network of pre-insulated piping was pre-fabricated above ground and lowered into pre-excavated trenches.</p>
-            <p>All welded pipe joints were then encapsulated with field enclosures and insulation inserts for a complete continuous waterproof barrier.</p>
-            <p>4-inch carbon steel piping with an 8-inch HDPE outer casing provided the spine run to the building entry points.</p>
-          </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../assets/img/woodburner.jpg" (click)="woodburnerModal.show()" class="img-fluid img-thumbnail">
+            <div bsModal #woodburnerModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../assets/img/woodburner.jpg" class="mw-100 mh-100">
+                            <p>New straw and wood burning boiler producing 1,000,000 BTUs for hot water.</p>
+                            <p>Buried pre-insulated piping installed for the distribution of the hot water to provide heating in the main farmhouse, out-buildings and a swimming pool.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img src="../assets/img/trenches.jpg" (click)="trenchesModal.show()" class="img-fluid img-thumbnail">
+            <div bsModal #trenchesModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../assets/img/trenches.jpg" class="mw-100 mh-100">
+                            <p>The network of pre-insulated piping was pre-fabricated above ground and lowered into pre-excavated trenches.</p>
+                            <p>All welded pipe joints were then encapsulated with field enclosures and insulation inserts for a complete continuous waterproof barrier.</p>
+                            <p>4-inch carbon steel piping with an 8-inch HDPE outer casing provided the spine run to the building entry points.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>
