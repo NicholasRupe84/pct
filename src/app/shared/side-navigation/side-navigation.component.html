@@ -1,4 +1,4 @@
-<div class="col" style="min-width: 250px;">
+<div class="col" style="min-width: 300px;">
     <ul class="nav flex-column">
         <li class="nav-item">
             <a routerLink="/home" class="nav-link">Home</a>
@@ -7,32 +7,40 @@
             <a href="https://prepcotravel.com" class="nav-link">Travel</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" (click)="isPipingCollapsed = !isPipingCollapsed">Distribution Piping</a>
+            <a class="nav-link" (click)="isMainCollapsed = !isMainCollapsed">Industry</a>
         </li>
-        <div [collapse]="isPipingCollapsed" class="collapsed-list">
+        <div [collapse]="isMainCollapsed" class="collapsed-list">
             <li class="nav-item">
-                <a routerLink="/fertilizer-and-chemical" class="nav-link">Fertilizer and Chemical</a>
+                <a routerLink="/industry-details" class="nav-link">Details</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/retail" class="nav-link">Retail</a>
+                <a class="nav-link" (click)="isPipingCollapsed = !isPipingCollapsed">Distribution Piping</a>
             </li>
+            <div [collapse]="isPipingCollapsed" class="collapsed-list">
+                <li class="nav-item">
+                    <a routerLink="/fertilizer-and-chemical" class="nav-link">Fertilizer and Chemical</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/retail" class="nav-link">Retail</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/wood-burner" class="nav-link">Wood Burner</a>
+                </li>
+            </div>
             <li class="nav-item">
-                <a routerLink="/wood-burner" class="nav-link">Wood Burner</a>
+                <a class="nav-link" (click)="isControlCollapsed = !isControlCollapsed">Dust Control</a>
             </li>
-        </div>
-        <li class="nav-item">
-            <a class="nav-link" (click)="isControlCollapsed = !isControlCollapsed">Dust Control</a>
-        </li>
-        <div [collapse]="isControlCollapsed" class="collapsed-list">
-            <li class="nav-item">
-                <a routerLink="/indonesia" class="nav-link">Indonesia</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="/mexico" class="nav-link">Mexico</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="/bahrain" class="nav-link">Bahrain</a>
-            </li>
+            <div [collapse]="isControlCollapsed" class="collapsed-list">
+                <li class="nav-item">
+                    <a routerLink="/indonesia" class="nav-link">Indonesia</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/mexico" class="nav-link">Mexico</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/bahrain" class="nav-link">Bahrain</a>
+                </li>
+            </div>
         </div>
         <li class="nav-item">
             <a routerLink="/home-and-garden" class="nav-link">Home &amp; Garden</a>
