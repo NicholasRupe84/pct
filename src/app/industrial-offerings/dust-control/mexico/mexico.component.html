@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="row">
+  <div class="row height-fix">
     <side-navigation></side-navigation>
-    <div class="col-8">
+    <div class="col-md-8 content">
         <h3>Mexico</h3>
         <h4 style="padding-bottom: 1rem; padding-top: 1rem;">Crushing and Screening Operation</h4>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-6">
                 <img src="../assets/img/before-ds.jpg" (click)="beforeDsModal.show()" class="img-fluid img-thumbnail">
                 <div bsModal #beforeDsModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-6">
                 <img src="../assets/img/after-ds.jpg" (click)="afterDsModal.show()" class="img-fluid img-thumbnail">
                 <div bsModal #afterDsModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">

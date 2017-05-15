@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './side-navigation.component.html'
 })
 export class SideNavigationComponent {
-    public isCollapsed:boolean = true;
+    public isPipingCollapsed:boolean = true;
+    public isControlCollapsed:boolean = true;
 }

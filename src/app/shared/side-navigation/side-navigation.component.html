@@ -1,12 +1,15 @@
-<div class="col" style="width: 250px;">
+<div class="col" style="min-width: 250px;">
     <ul class="nav flex-column">
         <li class="nav-item">
             <a routerLink="/home" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" (click)="isCollapsed = !isCollapsed">Distribution Piping</a>
+            <a href="https://prepcotravel.com" class="nav-link">Travel</a>
         </li>
-        <div [collapse]="isCollapsed">
+        <li class="nav-item">
+            <a class="nav-link" (click)="isPipingCollapsed = !isPipingCollapsed">Distribution Piping</a>
+        </li>
+        <div [collapse]="isPipingCollapsed" class="collapsed-list">
             <li class="nav-item">
                 <a routerLink="/fertilizer-and-chemical" class="nav-link">Fertilizer and Chemical</a>
             </li>
@@ -18,9 +21,9 @@
             </li>
         </div>
         <li class="nav-item">
-            <a class="nav-link" (click)="isCollapsed = !isCollapsed">Dust Control</a>
+            <a class="nav-link" (click)="isControlCollapsed = !isControlCollapsed">Dust Control</a>
         </li>
-        <div [collapse]="isCollapsed">
+        <div [collapse]="isControlCollapsed" class="collapsed-list">
             <li class="nav-item">
                 <a routerLink="/indonesia" class="nav-link">Indonesia</a>
             </li>
@@ -31,6 +34,9 @@
                 <a routerLink="/bahrain" class="nav-link">Bahrain</a>
             </li>
         </div>
+        <li class="nav-item">
+            <a routerLink="/home-and-garden" class="nav-link">Home &amp; Garden</a>
+        </li>
         <li class="nav-item">
             <a routerLink="/contact" class="nav-link">Contact</a>
         </li>

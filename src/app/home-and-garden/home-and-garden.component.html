@@ -1,3 +1,10 @@
-<pdf-viewer [src]="pdfSrc"
-            [original-size]="true"
-            style="display: block;"></pdf-viewer>
+<div class="container">
+    <div class="row">
+        <side-navigation></side-navigation>
+        <div class="col-md-8 content">
+            <pdf-viewer [src]="pdfSrc"
+                        [original-size]="false"
+                        style="display: block;"></pdf-viewer>
+        </div>
+    </div>
+</div>

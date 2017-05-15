@@ -1,37 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-body, html {
+html {
+    position: relative;
     min-height: 100%;
 }
 
-.navigation-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #585253;
+body {
+    margin-bottom: 60px;
+    background-color: #4c7eb1;
 }
 
-.navigation-menu > .prepco-brand {
-    float: left;
-}
-
-.navigation-menu .prepco-brand h2 {
-    font-size: 22px;
-    padding: 22px 10px;
-    color: #C2CDA1;
-    margin: 0;
-}
-
-.prepco-body {
-    height: 100%;
-    width: 100%;
-    margin-top: 50px;
-    float: right;
-    background-color: red;
-}
-
-.prepco-container {
-    max-width: 100%;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #EEEEEE;
 }
 
 .fade.in {
@@ -44,4 +29,70 @@ body, html {
 }
 .modal-backdrop.in {
   opacity: 0.5;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #E78548;
+}
+
+li {
+    cursor: pointer;
+    color: #F8BC4C;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 700;
+}
+
+li:hover {
+    color: #E78548;
+}
+
+.collapsed-list {
+    padding-left: 1rem;
+}
+
+side-navigation {
+    background-color: #AABAC5;
+}
+
+pdf-viewer {
+    padding-top: 1rem;
+}
+
+.content {
+    background-color: #94B5C2;
+    padding-bottom: 2rem;
+}
+
+.prepco-nav {
+    background-color: #EEEEEE;
+    color: #F8BC4C;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.height-fix {
+    min-height: 600px;
+}
+
+h3 {
+    padding-top: 1rem;
+}
+
+.card-deck {
+    padding-bottom: 2rem;
+}
+
+.card-img-bottom {
+    padding-bottom: .5rem;
+}
+
+.jumbotron {
+    margin-top: 1rem;
+}
+
+.card{
+    margin-bottom: 1rem;
 }
