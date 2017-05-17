@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row height-fix">
-    <side-navigation></side-navigation>
+    <side-navigation [isMainCollapsed]="false" [isPipingCollapsed]="false"></side-navigation>
     <div class="col-md-8 content">
       <h3>Fertilizer and Chemical Plant</h3>
       <p>Above ground pre-insulated pipeline to transfer liquid ammonia from supply ship to chemical plant two miles from the dock bay.</p>
@@ -8,6 +8,11 @@
       <p>A 3-inch diameter pre-insulated steel pipe ‘piggy-backed’ to the primary pipeline was for the purpose of a circulation delivery to help maintain pressure and temperature of the product.</p>
       <p>During construction, all pipe welds were heated to 600 degrees, tested using radiography procedures.</p>
       <p>Expansion loops and concrete anchor blocks were installed to provide controlled movement of the pipeline.</p>
+      <div class="row">
+          <div class="col-6">
+            <p class="picture-instructions">Click on picture to view larger image.</p>
+          </div>
+      </div>
       <div class="row">
         <div class="col-6">
           <img src="../assets/img/fertilizer1.jpg" (click)="fertilizerOneModal.show()" class="img-fluid img-thumbnail">

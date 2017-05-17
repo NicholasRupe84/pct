@@ -1,8 +1,13 @@
 <div class="container">
   <div class="row height-fix">
-    <side-navigation></side-navigation>
+    <side-navigation [isMainCollapsed]="false" [isPipingCollapsed]="false"></side-navigation>
     <div class="col-md-8 content">
       <h3>Retail</h3>
+      <div class="row">
+          <div class="col-6">
+            <p class="picture-instructions">Click on picture to view larger image and description.</p>
+          </div>
+      </div>
       <div class="row">
         <div class="col-6">
           <img src="../assets/img/retail1.jpg" (click)="retailOneModal.show()" class="img-fluid img-thumbnail">

@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'side-navigation',
   templateUrl: './side-navigation.component.html'
 })
 export class SideNavigationComponent {
-    public isMainCollapsed:boolean = true;
-    public isPipingCollapsed:boolean = true;
-    public isControlCollapsed:boolean = true;
+    @Input() isMainCollapsed:boolean = true;
+    @Input() isPipingCollapsed:boolean = true;
+    @Input() isControlCollapsed:boolean = true;
 }

@@ -1,8 +1,13 @@
 <div class="container">
   <div class="row height-fix">
-    <side-navigation></side-navigation>
+    <side-navigation [isMainCollapsed]="false" [isControlCollapsed]="false"></side-navigation>
     <div class="col-md-8 content">
         <h3>Bahrain</h3>
+        <div class="row">
+          <div class="col-6">
+            <p class="picture-instructions">Click on picture to view larger image and description.</p>
+          </div>
+        </div>
         <div class="row">
             <div class="col-6">
                 <img src="../assets/img/stacker-reclaim-bahrain.jpg" (click)="bahrainModal.show()" class="img-fluid img-thumbnail">
@@ -18,12 +23,12 @@
                 </div>
             </div>
             <div class="col-6">
-                <img src="../assets/img/after-ds.jpg" (click)="afterDsModal.show()" class="img-fluid img-thumbnail">
-                <div bsModal #afterDsModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
+                <img src="../assets/img/buckets.jpg" (click)="bucketsModal.show()" class="img-fluid img-thumbnail">
+                <div bsModal #bucketsModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <img src="../assets/img/after-ds.jpg" class="mw-100 mh-100">
+                                <img src="../assets/img/buckets.jpg" class="mw-100 mh-100">
                                 <p>In addition to suppression at the boom discharge and bucket discharge points, sprays are also located to treat the stockpile surface</p>
                             </div>
                         </div>

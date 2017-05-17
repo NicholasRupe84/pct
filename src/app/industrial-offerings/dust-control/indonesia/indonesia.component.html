@@ -1,11 +1,16 @@
 <div class="container">
   <div class="row height-fix">
-    <side-navigation></side-navigation>
+    <side-navigation [isMainCollapsed]="false" [isControlCollapsed]="false"></side-navigation>
     <div class="col-md-8 content">
         <h3>Indonesia</h3>
         <p>Dust Suppression systems at coal fired power station material handling operations. Dust suppression installed on 4 ship unloaders, 2 stacker-reclaimer machines and coal stockpile surface treatment.</p>
         <p>The stockpile surface spray cannons were operated by a weather station to determine rainfall, humidity, and wind direction that sequenced partial spraying to avoid over-spray.</p>
         <p>Water was taken from a large water storage basin that was also part of a project rainfall collection system during the monsoon periods.</p>
+        <div class="row">
+          <div class="col-6">
+            <p class="picture-instructions">Click on picture to view larger image and description.</p>
+          </div>
+        </div>
         <div class="row">
             <div class="col-6">
                 <img src="../assets/img/tph.jpg" (click)="tphModal.show()" class="img-fluid img-thumbnail">
