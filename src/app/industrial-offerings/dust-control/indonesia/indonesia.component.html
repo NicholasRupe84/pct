@@ -17,6 +17,12 @@
                 <div bsModal #tphModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="pull-left"></span>
+                                <button type="button" class="close pull-right" (click)="tphModal.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
                                 <img src="../assets/img/tph.jpg" class="mw-100 mh-100">
                                 <p>Ship Unloading operating at 4000 TPH</p>
@@ -30,6 +36,12 @@
                 <div bsModal #reclaimModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="pull-left"></span>
+                                <button type="button" class="close pull-right" (click)="reclaimModal.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
                                 <img src="../assets/img/reclaim-machine.jpg" class="mw-100 mh-100">
                                 <p>Stacker-Reclaim machine waiting completion of the stockyard preparations</p>

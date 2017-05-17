@@ -16,6 +16,12 @@
                 <div bsModal #beforeDsModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="pull-left"></span>
+                                <button type="button" class="close pull-right" (click)="beforeDsModal.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
                                 <img src="../assets/img/before-ds.jpg" class="mw-100 mh-100">
                                 <p>Before Dust Suppression</p>
@@ -30,6 +36,12 @@
                 <div bsModal #afterDsModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="pull-left"></span>
+                                <button type="button" class="close pull-right" (click)="afterDsModal.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
                                 <img src="../assets/img/after-ds.jpg" class="mw-100 mh-100">
                                 <p>After Dust Suppression</p>

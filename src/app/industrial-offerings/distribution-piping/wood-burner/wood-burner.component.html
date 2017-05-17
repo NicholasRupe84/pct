@@ -14,6 +14,12 @@
             <div bsModal #woodburnerModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
+                        <div class="modal-header">
+                                <span class="pull-left"></span>
+                                <button type="button" class="close pull-right" (click)="woodburnerModal.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                         <div class="modal-body">
                             <img src="../assets/img/woodburner.jpg" class="mw-100 mh-100">
                             <p>New straw and wood burning boiler producing 1,000,000 BTUs for hot water.</p>
@@ -28,6 +34,12 @@
             <div bsModal #trenchesModal="bs-modal" class="modal fade" tabeindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
+                        <div class="modal-header">
+                                <span class="pull-left"></span>
+                                <button type="button" class="close pull-right" (click)="trenchesModal.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                         <div class="modal-body">
                             <img src="../assets/img/trenches.jpg" class="mw-100 mh-100">
                             <p>The network of pre-insulated piping was pre-fabricated above ground and lowered into pre-excavated trenches.</p>
