@@ -24,6 +24,8 @@ import { MexicoComponent } from './industrial-offerings/dust-control/mexico/mexi
 import { HomeAndGardenComponent } from './home-and-garden/home-and-garden.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
+import { SendMailService } from './services/send-mail.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +53,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     CollapseModule.forRoot(),
     ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    SendMailService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

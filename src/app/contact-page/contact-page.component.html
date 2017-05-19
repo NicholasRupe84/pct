@@ -3,22 +3,19 @@
     <side-navigation></side-navigation>
     <div class="col-md-8 content">
         <div class="form-area">  
-            <form role="form">
+            <form role="form" #contactForm="ngForm" (ngSubmit)="sendEmail()">
             <br style="clear:both">
               <h3 style="margin-bottom: 25px;">Contact Us</h3>
               <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="model.name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" [(ngModel)]="model.email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                <textarea class="form-control" type="textarea" id="message" name="text" placeholder="Message" rows="7" [(ngModel)]="model.text" required></textarea>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" type="textarea" id="message" placeholder="Message" rows="7"></textarea>
-              </div>
-            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send Message</button>
+            <button type="submit" [disabled]="!enableSubmitButton(contactForm.valid)" id="submit" name="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
     </div>
