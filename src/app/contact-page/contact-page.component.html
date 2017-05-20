@@ -2,10 +2,11 @@
   <div class="row height-fix">
     <side-navigation></side-navigation>
     <div class="col-md-8 content">
-        <div class="form-area">  
+        <div class="form-area"> 
             <form role="form" #contactForm="ngForm" (ngSubmit)="sendEmail()">
             <br style="clear:both">
               <h3 style="margin-bottom: 25px;">Contact Us</h3>
+              <p *ngIf="successful" class="mail-success">Message sent. We will contact you shortly.</p>
               <div class="form-group">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="model.name" required>
               </div>

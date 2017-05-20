@@ -8,9 +8,10 @@ import { SendMailService, Message } from '../services/send-mail.service';
   templateUrl: './contact-page.component.html'
 })
 export class ContactPageComponent implements OnInit {
-  constructor(private router: Router, private sendMailService: SendMailService) {}
-
   model = new Message('', '', '');
+  public successful = false;
+
+  constructor(private router: Router, private sendMailService: SendMailService) {}
 
   ngOnInit(): void {
     this.router.events.subscribe((evt) => {
@@ -24,7 +25,15 @@ export class ContactPageComponent implements OnInit {
   sendEmail() {
     let emailOperation = this.sendMailService.sendMail(this.model);
 
-    emailOperation.subscribe();
+    emailOperation.subscribe(
+      mail => {
+        this.model = new Message('', '', '');
+        this.successful = true;
+      },
+      err => {
+        console.log(err);
+      }
+    );
   }
 
   enableSubmitButton(formIsValid: boolean): boolean {
